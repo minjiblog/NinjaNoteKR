@@ -7,7 +7,7 @@ import './globals.css';
 import NavBar from '@/components/NavBar';
 import Footer from '@/components/footer';
 import CookieConsent from '@/components/CookieConsent';
-import { ThemeProvider } from 'next-themes';
+import Providers from '@/components/Providers';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -43,15 +43,13 @@ export default function RootLayout({
         />
       </head>
       <body className={inter.className}>
-        <ThemeProvider attribute="class" defaultTheme="light" enableSystem>
+        <Providers>
           <NavBar />
-              
-            
-          
           <main className="flex-1">{children}</main>
           <Footer />
           <CookieConsent />
-        </ThemeProvider>
+        </Providers>
+
       </body>
     </html>
   );
