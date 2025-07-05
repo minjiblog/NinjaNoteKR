@@ -1,0 +1,30 @@
+Third-Party Open-Source Notices
+================================
+
+This project incorporates packages that are each provided under their own
+open-source licenses (primarily MIT). We have not modified these packages.
+Full license texts are available inside `node_modules/<package>/LICENSE`.
+Below is a non-exhaustive list of the primary runtime dependencies:
+
+MIT License
+-----------
+• next (© Vercel, Inc.)
+• react, react-dom (© Meta Platforms, Inc.)
+• tailwindcss (© Tailwind Labs, Inc.)
+• framer-motion (© Framer B.V.)
+• next-themes (© Pacote Software Ltd.)
+• lucide-react (© Lucide Contributors)
+• typescript (© Microsoft Corporation)
+
+BSD / Apache & Other Permissive Licenses
+---------------------------------------
+• postcss – MIT
+• autoprefixer – MIT
+
+Generated license report
+------------------------
+To see the full list of transitive packages and their licenses, run:
+
+    npm run licenses
+
+which uses `license-checker` to generate `licenses.json` for auditing.
