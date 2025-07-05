@@ -3,21 +3,24 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import { allCNPs } from "contentlayer/generated";
-import { useMDXComponent } from "next-contentlayer/hooks";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
 export default function CNPSection() {
-  const cnp = allCNPs[0];
-  const MDXContent = useMDXComponent(cnp.body.code);
+  const title = "CryptoNinja Partners(CNP)";
+  const description = "CryptoNinja 캐릭터 IP를 활용한 22,222개 발행 PFP NFT 프로젝트.";
+  const images = [
+    "/images/cnp/1.webp",
+    "/images/cnp/2.webp",
+    "/images/cnp/3.webp"
+  ];
   const [currentImage, setCurrentImage] = useState(0);
 
   const nextImage = () => {
-    setCurrentImage((prev) => (prev + 1) % cnp.images.length);
+    setCurrentImage((prev) => (prev + 1) % images.length);
   };
 
   const prevImage = () => {
-    setCurrentImage((prev) => (prev - 1 + cnp.images.length) % cnp.images.length);
+    setCurrentImage((prev) => (prev - 1 + images.length) % images.length);
   };
 
   return (
@@ -30,7 +33,7 @@ export default function CNPSection() {
           transition={{ duration: 0.5 }}
           className="section-title"
         >
-          {cnp.title}
+          {title}
         </motion.h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
@@ -42,7 +45,7 @@ export default function CNPSection() {
             className="order-2 md:order-1"
           >
             <div className="prose dark:prose-invert max-w-none">
-              <MDXContent />
+              <p className="text-gray-700 dark:text-gray-300 whitespace-pre-line">{description}</p>
             </div>
           </motion.div>
 
@@ -54,7 +57,7 @@ export default function CNPSection() {
             className="order-1 md:order-2"
           >
             <div className="relative h-80 md:h-96 rounded-2xl overflow-hidden shadow-lg">
-              {cnp.images.map((image, index) => (
+              {images.map((image: string, index: number) => (
                 <motion.div
                   key={index}
                   className="absolute inset-0"
@@ -90,7 +93,7 @@ export default function CNPSection() {
               </div>
               
               <div className="absolute bottom-4 left-0 right-0 flex justify-center space-x-2">
-                {cnp.images.map((_, index) => (
+                {images.map((_: unknown, index: number) => (
                   <button
                     key={index}
                     onClick={() => setCurrentImage(index)}
