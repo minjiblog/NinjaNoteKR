@@ -2,13 +2,16 @@
 
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { allFAQs } from "contentlayer/generated";
-import { useMDXComponent } from "next-contentlayer/hooks";
+
 import { ChevronDown, ChevronUp } from "lucide-react";
 
 export default function FAQSection() {
-  const faq = allFAQs[0];
-  const MDXContent = useMDXComponent(faq.body.code);
+  type FAQItem = { question: string; answer: string };
+  const faqs: FAQItem[] = [
+    { question: "CNP 발행 수량은?", answer: "22,222개(모두 판매 완료)." },
+    { question: "저작권 규정은?", answer: "CryptoNinja IP 가이드라인과 동일하게, 상업 이용 연 1,000만 JPY 이하 자유." },
+    { question: "2차 창작 NFT 발행이 가능한가요?", answer: "라이선스 범위 내에서 가능합니다. 자세한 규정은 공식 Discord를 참고하세요." },
+  ];
   const [openIndex, setOpenIndex] = useState<number | null>(0);
 
   const toggleAccordion = (index: number) => {
@@ -25,16 +28,12 @@ export default function FAQSection() {
           transition={{ duration: 0.5 }}
           className="section-title"
         >
-          {faq.title}
+          "자주 묻는 질문"
         </motion.h2>
 
         <div className="max-w-3xl mx-auto">
-          <div className="prose dark:prose-invert max-w-none mb-8">
-            <MDXContent />
-          </div>
-
           <div className="space-y-4">
-            {faq.questions.map((item, index) => (
+            {faqs.map((item, index) => (
               <motion.div
                 key={index}
                 initial={{ opacity: 0, y: 20 }}
