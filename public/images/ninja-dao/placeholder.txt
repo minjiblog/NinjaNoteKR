@@ -1,0 +1,7 @@
+This directory should contain the following image files for the Ninja DAO section:
+- community-event.png
+- workshop.png
+- meetup.png
+- collaboration.png
+
+In a real project, you would replace these placeholders with actual image files showing Ninja DAO community events and activities.

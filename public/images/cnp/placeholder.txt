@@ -1,0 +1,8 @@
+This directory should contain the following image files for the CNP section:
+- nft-sample-1.png
+- nft-sample-2.png
+- nft-sample-3.png
+- nft-sample-4.png
+- nft-sample-5.png
+
+In a real project, you would replace these placeholders with actual image files showing CryptoNinja Partners NFT samples.
