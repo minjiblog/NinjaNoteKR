@@ -1,13 +1,18 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { allRoadmaps } from "contentlayer/generated";
-import { useMDXComponent } from "next-contentlayer/hooks";
 import { CheckCircle, Circle } from "lucide-react";
 
 export default function RoadmapSection() {
-  const roadmap = allRoadmaps[0];
-  const MDXContent = useMDXComponent(roadmap.body.code);
+  type RoadmapItem = { date: string; title: string; description: string; completed: boolean };
+  const roadmap = {
+    title: "로드맵",
+    items: [
+      { date: "2023 Q1", title: "사이트 개설", description: "Ninja DAO 한국어 정보 허브 런칭.", completed: true },
+      { date: "2023 Q3", title: "커뮤니티 파트너십", description: "국내 NFT 프로젝트와 협력 강화.", completed: true },
+      { date: "2024 Q1", title: "오프라인 밋업", description: "서울 밋업 개최.", completed: false },
+    ],
+  } as { title: string; items: RoadmapItem[] };
 
   return (
     <section id="roadmap" className="section bg-white dark:bg-gray-800">
@@ -24,7 +29,7 @@ export default function RoadmapSection() {
 
         <div className="max-w-3xl mx-auto">
           <div className="prose dark:prose-invert max-w-none mb-12">
-            <MDXContent />
+            {/* Removed MDXContent */}
           </div>
 
           <div className="relative">

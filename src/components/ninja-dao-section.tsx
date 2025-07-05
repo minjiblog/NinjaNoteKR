@@ -2,8 +2,8 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
-import { allNinjaDaos } from "contentlayer/generated";
-import { useMDXComponent } from "next-contentlayer/hooks";
+
+
 import { Palette, BookOpen, Users } from "lucide-react";
 
 const iconComponents = {
@@ -13,8 +13,21 @@ const iconComponents = {
 };
 
 export default function NinjaDaoSection() {
-  const ninjaDao = allNinjaDaos[0];
-  const MDXContent = useMDXComponent(ninjaDao.body.code);
+  const ninjaDao = {
+    title: "Ninja DAO",
+    description: "일본 최대 규모의 NFT 커뮤니티이며 창작과 학습의 허브입니다.",
+    images: [
+      "/images/ninja-dao/1.webp",
+      "/images/ninja-dao/2.webp",
+      "/images/ninja-dao/3.webp",
+      "/images/ninja-dao/4.webp",
+    ],
+    cards: [
+      { icon: "Palette", title: "크리에이터 지원", description: "창작자들이 자신의 작품을 공유하고 피드백을 받을 수 있습니다." },
+      { icon: "BookOpen", title: "학습 자료", description: "NFT, 블록체인, 마케팅 등 다양한 교육 리소스를 제공합니다." },
+      { icon: "Users", title: "커뮤니티", description: "17,000+ 명의 멤버가 활발히 소통합니다." },
+    ],
+  };
 
   const container = {
     hidden: { opacity: 0 },
@@ -52,7 +65,7 @@ export default function NinjaDaoSection() {
             transition={{ duration: 0.5 }}
           >
             <div className="prose dark:prose-invert max-w-none">
-              <MDXContent />
+              <p className="text-gray-700 dark:text-gray-300 whitespace-pre-line">{ninjaDao.description}</p>
             </div>
           </motion.div>
 

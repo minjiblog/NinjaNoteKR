@@ -2,10 +2,15 @@
 
 import { motion } from "framer-motion";
 import Link from "next/link";
-import { allHeroes } from "contentlayer/generated";
+
 
 export default function HeroSection() {
-  const hero = allHeroes[0];
+  const hero = {
+    title: "Ninja DAO 정보 허브",
+    subtitle: "일본 최대 NFT 커뮤니티를 한눈에.",
+    ctaText: "공식 Discord 입장",
+    ctaLink: "https://discord.gg/ninjadao",
+  };
 
   return (
     <section
