@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     description: "일본 최대 NFT 커뮤니티 Ninja DAO에 대한 소개와 리소스를 제공합니다.",
     images: [
       {
-        url: "/images/ninja-dao/og.png",
+        url: "/images/NinjaDAO.png",
         width: 1200,
         height: 630,
         alt: "Ninja DAO OG Image"

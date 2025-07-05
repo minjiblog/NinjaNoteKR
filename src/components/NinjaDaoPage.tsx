@@ -49,7 +49,7 @@ export default function NinjaDaoPage() {
             </p>
           </div>
           <img
-            src="images/ninjadao.png"
+            src="/images/NinjaDAO.png"
             alt="Ninja DAO 소개 이미지"
             className="w-full h-64 md:h-80 object-cover rounded-xl shadow-lg"
           />
