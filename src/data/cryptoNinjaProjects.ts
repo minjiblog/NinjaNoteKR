@@ -3,7 +3,7 @@ import { Project } from './types';
 export const cryptoNinjaProjects: Project[] = [
   {
     title: 'CryptoNinja NFT',
-    desc: '일본인 일러스트레이터 Rii2가 디자인한 22,222개의 닌자 캐릭터 PFP 컬렉션으로, 자유로운 2차 창작을 허용해 다양한 파생 프로젝트가 탄생한 CryptoNinja IP의 원형입니다.',
+    desc: '일본인 일러스트레이터 Rii2가 디자인한 닌자 캐릭터 PFP 컬렉션으로, 자유로운 2차 창작을 허용해 다양한 파생 프로젝트가 탄생한 CryptoNinja IP의 원형입니다.',
     img: '/images/CryptoNinja.webp',
     link: 'https://magiceden.io/collections/ethereum/0x495f947276749ce646f68ac8c248420045cb7b5e%3Aopensea-crypto-ninja-nft',
   },
