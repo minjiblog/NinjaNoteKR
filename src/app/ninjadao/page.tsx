@@ -1,4 +1,3 @@
-"use server";
 import NinjaDaoPage from "@/components/NinjaDaoPage";
 import type { Metadata } from "next";
 
