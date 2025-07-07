@@ -10,6 +10,20 @@ const newsItems = [
     source: "PR TIMES",
     url: "https://prtimes.jp/main/html/rd/p/000000123.000072682.html",
   },
+  {
+    id: 2,
+    date: "2024-12-05",
+    title: "CNP 캐릭터, 롯데 자판기 이벤트 발표", // TODO: 정확한 제목으로 수정
+    source: "PR TIMES",
+    url: "https://prtimes.jp/main/html/rd/p/000000109.000012092.html",
+  },
+  {
+    id: 3,
+    date: "2024-11-21",
+    title: "CoinDesk Japan, CNP 관련 기사", // TODO: 정확한 제목으로 수정
+    source: "CoinDesk Japan",
+    url: "https://www.coindeskjapan.com/260507/",
+  },
 ];
 
 export default function NewsPage() {
