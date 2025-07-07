@@ -2,27 +2,13 @@
 
 import Link from "next/link";
 
-const dummyNews = [
+const newsItems = [
   {
     id: 1,
-    date: "2025-07-01",
-    title: "Ninja DAO, 신규 파트너십 발표",
-    source: "Twitter",
-    url: "#",
-  },
-  {
-    id: 2,
-    date: "2025-06-29",
-    title: "CryptoNinja, 한정판 NFT 드롭 예고",
-    source: "Discord",
-    url: "#",
-  },
-  {
-    id: 3,
-    date: "2025-06-25",
-    title: "CNP, 커뮤니티 이벤트 개최",
-    source: "Medium",
-    url: "#",
+    date: "2025-03-07",
+    title: "RED° DRONES, CNP 연계 드론쇼 개최",
+    source: "PR TIMES",
+    url: "https://prtimes.jp/main/html/rd/p/000000123.000072682.html",
   },
 ];
 
@@ -32,7 +18,7 @@ export default function NewsPage() {
       <div className="max-w-4xl mx-auto">
         <h1 className="text-3xl font-bold mb-8 text-gray-900 dark:text-white">Latest News</h1>
         <ul className="space-y-6">
-          {dummyNews.map((news) => (
+          {newsItems.map((news: any) => (
             <li
               key={news.id}
               className="border-b border-gray-200 dark:border-gray-700 pb-4 flex flex-col md:flex-row md:items-center md:justify-between"
