@@ -61,10 +61,14 @@ export default function NinjaDaoPage() {
         <div className="max-w-4xl mx-auto">
           <h3 className="text-2xl font-bold mb-6 text-gray-900 dark:text-white text-center">Ninja DAO 핵심 행동 지침</h3>
           <ul className="space-y-4 text-gray-700 dark:text-gray-300 leading-relaxed list-disc list-inside">
-            <li><span className="font-medium text-primary-600 dark:text-primary-400">즐겁게</span> – 커뮤니티 활동은 재미를 기반으로 합니다.</li>
-            <li><span className="font-medium text-primary-600 dark:text-primary-400">친절하게</span> – 신규 참여자에게 상냥하게 정보를 제공하고 돕습니다.</li>
-            <li><span className="font-medium text-primary-600 dark:text-primary-400">자유롭게 창작</span> – CryptoNinja IP는 상업적 이용까지 허용되며, 누구나 2차 창작물을 만들 수 있습니다.</li>
+            <li><span className="font-medium text-primary-600 dark:text-primary-400">크리에이터의 가능성을 믿자</span> – 창작자의 잠재력을 신뢰하고 지원합니다.</li>
+            <li><span className="font-medium text-primary-600 dark:text-primary-400">실패를 환영하고 성공은 모두가 함께 기뻐하자</span> – 도전과 시행착오를 장려하며, 성과는 커뮤니티 모두의 축제로 삼습니다.</li>
+            <li><span className="font-medium text-primary-600 dark:text-primary-400">타인에게 친절하게, 그리고 자기 자신에게도 친절하게</span> – 서로를 존중하고 배려하며, 자기 자신도 소중히 여깁니다.</li>
+            <li><span className="font-medium text-primary-600 dark:text-primary-400">마이너리티로 있자</span> – 기존 질서에 얽매이지 않고 새로운 가능성을 탐구합니다.</li>
           </ul>
+          <p className="mt-6 text-sm text-gray-600 dark:text-gray-400 leading-relaxed">
+            실패해도 좋으니 그 경험을 발판 삼아 더 큰 세계를 함께 만들어 가자는 Ninja DAO의 정신을 보여 줍니다. 또한 마이너리티가 지닌 가능성에 초점을 맞춰 세상을 변화시키자는 메시지가 담겨 있습니다. 원문은 <a href="https://note.com/ihayato/n/n1a7526e830c1" target="_blank" rel="noopener noreferrer" className="underline text-primary-600 dark:text-primary-400">이케하야의 노트 글</a>에서 확인할 수 있습니다.
+          </p>
         </div>
       </section>
 
