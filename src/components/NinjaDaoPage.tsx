@@ -89,6 +89,35 @@ export default function NinjaDaoPage() {
         </div>
       </section>
 
+      {/* Ninket Section */}
+      <section className="py-16 px-4 bg-gray-50 dark:bg-gray-800">
+        <div className="max-w-4xl mx-auto">
+          <h3 className="text-2xl font-bold mb-6 text-gray-900 dark:text-white text-center">Ninket – Web3 크리에이터 축제</h3>
+          <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-6 text-sm">
+            <strong>Ninket(닌켓)</strong>은 일본 최대 NFT 커뮤니티 <strong>Ninja&nbsp;DAO</strong>가 주최하는 연례 Web3&nbsp;크리에이터 행사입니다. NFT·Web3 분야의 창작자와 팬이 한자리에 모여 작품 즉석 판매(즉매)와 교류를 즐기는 축제의 장으로, 2023년 첫 개최 이후 매년 도쿄에서 열리고 있습니다.
+          </p>
+          <div className="grid md:grid-cols-2 gap-6 text-gray-700 dark:text-gray-300 text-sm">
+            <div>
+              <h4 className="font-semibold mb-2 text-gray-900 dark:text-white">최근 개최 정보</h4>
+              <ul className="list-disc list-inside space-y-1">
+                <li>2025년 6월 14일 – 코ング레스퀘어 하네다(도쿄)</li>
+                <li>2024년 – 제2회 개최 (도쿄)</li>
+                <li>2023년 – 제1회 개최</li>
+              </ul>
+            </div>
+            <div>
+              <h4 className="font-semibold mb-2 text-gray-900 dark:text-white">행사 특징</h4>
+              <ul className="list-disc list-inside space-y-1">
+                <li>NFT·Web3 관심 크리에이터와 팬이 직접 작품·굿즈를 판매·교환</li>
+                <li>사전 신청제로 부스·참가자 모집</li>
+                <li>해시태그 <code className="px-1 py-0.5 bg-gray-200 dark:bg-gray-700 rounded">#にんケット</code> 로 SNS 후기가 활발</li>
+              </ul>
+            </div>
+          </div>
+          <p className="mt-6 text-xs text-gray-500 dark:text-gray-400">자세한 내용은 <a href="https://ninket2024.studio.site" target="_blank" rel="noopener noreferrer" className="underline">공식 사이트</a> 및 X&nbsp;(Twitter) 계정 <a href="https://x.com/ninket0920" target="_blank" rel="noopener noreferrer" className="underline">@ninket0920</a> 를 참고하세요.</p>
+        </div>
+      </section>
+
       {/* Join Section */}
       <section className="py-16 px-4 bg-primary-600 text-white text-center">
         <h3 className="text-2xl font-bold mb-4">Ninja DAO에 참여해 보세요!</h3>
