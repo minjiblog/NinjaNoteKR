@@ -24,7 +24,7 @@ export default function CryptoNinjaPage() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.1 }}
           >
-            2021년 9월 출시된 일본발 닌자 테마 NFT 컬렉션으로, 각 캐릭터에 이름·성격·생일·무기·닌술·소속 마을 등 고유 설정이 부여된 스토리형 프로젝트
+            2021년 9월 출시된 일본발 닌자 테마 NFT 컬렉션
           </motion.p>
           <motion.a
             href="https://www.ninja-dao.com/characters"

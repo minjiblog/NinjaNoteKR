@@ -84,6 +84,22 @@ export default function HomePage() {
 Ninja DAO와 CryptoNinja Partners의 다양한 프로젝트 정보를 한국어로 정리해 공유합니다.
 Web3와 NFT가 처음이신 분들도 부담 없이 자유롭게 둘러보세요!
           </motion.p>
+          <div className="flex justify-center gap-4 mb-4">
+            <a
+              href="https://x.com/minjiblogg"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-1 text-primary-600 dark:text-primary-400 hover:underline text-sm font-medium"
+            >
+              X (트위터)
+            </a>
+            <a
+              href="/mycnpstory"
+              className="inline-flex items-center gap-1 text-primary-600 dark:text-primary-400 hover:underline text-sm font-medium"
+            >
+              #mycnpstory →
+            </a>
+          </div>
         </div>
       </section>
 
