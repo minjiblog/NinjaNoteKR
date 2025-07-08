@@ -16,6 +16,7 @@ export default function NavBar() {
     { href: "/cryptoninja", label: "CryptoNinja" },
     { href: "/cryptoninjapartners", label: "CNP" },
     { href: "/news", label: "News" },
+    { href: "/mycnpstory", label: "#mycnpstory" },
   ];
 
   return (
