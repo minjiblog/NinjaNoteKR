@@ -19,6 +19,11 @@ export const metadata: Metadata = {
     description: 'Ninja DAO와 CryptoNinja Partners 프로젝트 정보를 한국어로 쉽게 소개하는 팬 사이트입니다.',
     images: ['/images/hero-og.png'],
   },
+  icons: {
+    icon: '/images/ninjanote.png',
+    shortcut: '/images/ninjanote.png',
+    apple: '/images/ninjanote.png',
+  },
 };
 
 export default function RootLayout({
@@ -41,6 +46,7 @@ export default function RootLayout({
           href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css"
           rel="stylesheet"
         />
+        <link rel="icon" type="image/png" href="/images/ninjanote.png" />
       </head>
       <body className={inter.className}>
         <Providers>
