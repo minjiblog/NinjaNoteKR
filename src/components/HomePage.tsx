@@ -122,24 +122,89 @@ Web3와 NFT가 처음이신 분들도 부담 없이 자유롭게 둘러보세요
         </div>
       </section>
 
-      {/* Resources Quick Links */}
+      {/* 최신 소식 */}
+      <section className="py-20 px-4 bg-white dark:bg-gray-900">
+        <div className="max-w-4xl mx-auto text-center">
+          <h2 className="text-2xl font-bold mb-10 text-gray-900 dark:text-white">Latest News</h2>
+          <ul className="grid gap-6 sm:grid-cols-2 md:grid-cols-3 text-left">
+            {[
+              {
+                id: 1,
+                date: "2025-03-07",
+                title: "RED° DRONES, CNP 연계 드론쇼 개최",
+                source: "PR TIMES",
+                url: "https://prtimes.jp/main/html/rd/p/000000123.000072682.html",
+              },
+              {
+                id: 2,
+                date: "2025-02-27",
+                title: "CNP Toys 2차 예약 판매 개시",
+                source: "PR TIMES",
+                url: "https://prtimes.jp/main/html/rd/p/000000118.000072682.html",
+              },
+              {
+                id: 3,
+                date: "2025-02-20",
+                title: "CNP, 신규 파트너십 발표",
+                source: "CoinPost",
+                url: "https://coinpost.jp/",
+              },
+            ].map((news) => (
+              <li key={news.id} className="bg-gray-50 dark:bg-gray-800 p-6 rounded-xl shadow hover:shadow-md transition">
+                <p className="text-primary-600 dark:text-primary-400 text-sm font-medium mb-1">{news.date}</p>
+                <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2 line-clamp-2">
+                  {news.title}
+                </h3>
+                <p className="text-xs text-gray-500 dark:text-gray-400 mb-4">{news.source}</p>
+                <a
+                  href={news.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block text-sm text-primary-600 dark:text-primary-400 hover:underline"
+                >
+                  자세히 보기 →
+                </a>
+              </li>
+            ))}
+          </ul>
+          <a
+            href="/news"
+            className="inline-block mt-8 text-primary-600 dark:text-primary-400 hover:underline font-semibold"
+          >
+            전체 뉴스 보기 →
+          </a>
+        </div>
+      </section>
+
+      {/* 핵심 콘텐츠 */}
       <section className="py-20 px-4 bg-gray-50 dark:bg-gray-800">
         <div className="max-w-6xl mx-auto text-center">
-          <h2 className="text-2xl font-bold mb-8 text-gray-900 dark:text-white">공식 홈페이지</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+          <h2 className="text-2xl font-bold mb-10 text-gray-900 dark:text-white">핵심 콘텐츠</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 text-left">
             {[
-              { label: "CryptoNinja Partners", href: "https://www.cryptoninja-partners.xyz/" },
-              { label: "CryptoNinja Mobile", href: "https://cryptoninja-mobile.com/" },
-              { label: "CNP Credit Card", href: "https://www.eposcard.co.jp/gecard/financie/cryptoninja/index.html" },
-              { label: "Magic Eden: CNP", href: "https://magiceden.io/collections/ethereum/0x138a5c693279b6cd82f48d4bef563251bc15adce" },
-              { label: "Guidelines", href: "https://www.ninja-dao.com/guidelines" },
+              {
+                href: "/ninjadao",
+                title: "Ninja DAO란?",
+                desc: "일본 최대 NFT·Web3 커뮤니티 소개",
+              },
+              {
+                href: "/cryptoninjapartners",
+                title: "CNP란?",
+                desc: "대중적 PFP NFT 프로젝트 핵심 정리",
+              },
+              {
+                href: "/cryptoninja",
+                title: "CryptoNinja IP 확장",
+                desc: "만화·게임·굿즈 등 확장 사례",
+              },
             ].map((item) => (
               <a
                 key={item.href}
                 href={item.href}
-                className="block bg-white dark:bg-gray-700 rounded-xl shadow hover:shadow-md p-6 transition transform hover:-translate-y-1"
+                className="block bg-white dark:bg-gray-700 rounded-xl shadow hover:shadow-md p-8 transition"
               >
-                {item.label}
+                <h3 className="text-lg font-semibold mb-2 text-gray-900 dark:text-white">{item.title}</h3>
+                <p className="text-sm text-gray-600 dark:text-gray-300">{item.desc}</p>
               </a>
             ))}
           </div>

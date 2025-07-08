@@ -100,7 +100,7 @@ export default function NinjaDaoPage() {
             <div>
               <h4 className="font-semibold mb-2 text-gray-900 dark:text-white">최근 개최 정보</h4>
               <ul className="list-disc list-inside space-y-1">
-                <li>2025년 6월 14일 – 코ング레스퀘어 하네다(도쿄)</li>
+                <li>2025년 6월 14일 – 콩그레스퀘어 하네다(도쿄)</li>
                 <li>2024년 – 제2회 개최 (도쿄)</li>
                 <li>2023년 – 제1회 개최</li>
               </ul>
