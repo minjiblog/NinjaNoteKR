@@ -192,41 +192,6 @@ Web3와 NFT가 처음이신 분들도 부담 없이 자유롭게 둘러보세요
         </div>
       </section>
 
-      {/* 핵심 콘텐츠 */}
-      <section className="py-20 px-4 bg-gray-50 dark:bg-gray-800">
-        <div className="max-w-6xl mx-auto text-center">
-          <h2 className="text-2xl font-bold mb-10 text-gray-900 dark:text-white">핵심 콘텐츠</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 text-left">
-            {[
-              {
-                href: "/ninjadao",
-                title: "Ninja DAO란?",
-                desc: "일본 최대 NFT·Web3 커뮤니티 소개",
-              },
-              {
-                href: "/cryptoninjapartners",
-                title: "CNP란?",
-                desc: "대중적 PFP NFT 프로젝트 핵심 정리",
-              },
-              {
-                href: "/cryptoninja",
-                title: "CryptoNinja IP 확장",
-                desc: "만화·게임·굿즈 등 확장 사례",
-              },
-            ].map((item) => (
-              <a
-                key={item.href}
-                href={item.href}
-                className="block bg-white dark:bg-gray-700 rounded-xl shadow hover:shadow-md p-8 transition"
-              >
-                <h3 className="text-lg font-semibold mb-2 text-gray-900 dark:text-white">{item.title}</h3>
-                <p className="text-sm text-gray-600 dark:text-gray-300">{item.desc}</p>
-              </a>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* Simple Footer */}
       <footer className="py-10 px-4 bg-gray-100 dark:bg-gray-800 text-center text-sm text-gray-600 dark:text-gray-300">
         <p>
