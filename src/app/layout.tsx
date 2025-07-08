@@ -20,9 +20,9 @@ export const metadata: Metadata = {
     images: ['/images/hero-og.png'],
   },
   icons: {
-    icon: '/images/ninjanote.png',
-    shortcut: '/images/ninjanote.png',
-    apple: '/images/ninjanote.png',
+    icon: '/images/favicon.png',
+    shortcut: '/images/favicon.png',
+    apple: '/images/favicon.png',
   },
 };
 
@@ -46,7 +46,7 @@ export default function RootLayout({
           href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css"
           rel="stylesheet"
         />
-        <link rel="icon" type="image/png" href="/images/ninjanote.png" />
+        <link rel="icon" type="image/png" href="/images/favicon.png" />
       </head>
       <body className={inter.className}>
         <Providers>
