@@ -35,7 +35,18 @@ const newsItems = [
 
 export default function NewsPage() {
   return (
-    <section className="min-h-screen py-20 px-4 bg-white dark:bg-gray-900">
+    <>
+      {/* Hero */}
+      <section className="relative py-32 px-4 text-center bg-gradient-to-b from-emerald-300 to-emerald-500 dark:from-gray-800 dark:to-gray-900 text-white overflow-hidden">
+        <div className="relative z-10 max-w-4xl mx-auto">
+          <h1 className="text-4xl md:text-6xl font-bold mb-6">Latest News</h1>
+          <p className="text-lg md:text-xl text-gray-200">
+            Ninja DAO & CryptoNinja Partners 최신 소식을 한눈에 확인하세요.
+          </p>
+        </div>
+      </section>
+
+      <section className="min-h-screen py-20 px-4 bg-white dark:bg-gray-900">
       <div className="max-w-4xl mx-auto">
         <h1 className="text-3xl font-bold mb-8 text-gray-900 dark:text-white">Latest News</h1>
         <ul className="space-y-6">
@@ -63,5 +74,6 @@ export default function NewsPage() {
         </ul>
       </div>
     </section>
+    </>
   );
 }
