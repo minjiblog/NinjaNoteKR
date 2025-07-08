@@ -47,7 +47,7 @@ export default function CryptoNinjaPartnersPage() {
               title: 'CryptoNinja Partners (CNP)',
               desc: '22,222개의 닌자 캐릭터로 구성된 메인 PFP NFT 컬렉션으로, 자유로운 2차 창작과 수많은 파생 프로젝트의 기반이 되는 CNP IP입니다.',
               img: '/images/cnp.jpg',
-              link: 'https://opensea.io/collection/cryptoninja-partners',
+              link: 'https://magiceden.io/collections/ethereum/0x138a5c693279b6cd82f48d4bef563251bc15adce',
             },
             {
               title: 'CNP TCG',
