@@ -1,5 +1,8 @@
 {
   "/page": "app/page.js",
-  "/not-found": "app/not-found.js",
-  "/mycnpstory/page": "app/mycnpstory/page.js"
+  "/ninjadao/page": "app/ninjadao/page.js",
+  "/news/page": "app/news/page.js",
+  "/mycnpstory/page": "app/mycnpstory/page.js",
+  "/cryptoninjapartners/page": "app/cryptoninjapartners/page.js",
+  "/cryptoninja/page": "app/cryptoninja/page.js"
 }

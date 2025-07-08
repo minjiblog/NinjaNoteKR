@@ -5,6 +5,13 @@ import Link from "next/link";
 const newsItems = [
   {
     id: 1,
+    date: "2025-06-25",
+    title: "‘숨지 않는! 크립토닌자 사쿠야’ 시즌3, 7월 7일 방송 시작",
+    source: "Yahoo!ニュース",
+    url: "https://news.yahoo.co.jp/articles/3dcf48c9bd321269d6a2facb271e8e814b9942df",
+  },
+  {
+    id: 2,
     date: "2025-03-07",
     title: "RED° DRONES, CNP 연계 드론쇼 개최",
     source: "PR TIMES",
@@ -12,15 +19,15 @@ const newsItems = [
   },
   {
     id: 2,
-    date: "2024-12-05",
-    title: "CNP 캐릭터, 롯데 자판기 이벤트 발표", // TODO: 정확한 제목으로 수정
+    date: "2025-07-01",
+    title: "CNP, 7월 2~4일 개최 라이선싱 재팬 참가",
     source: "PR TIMES",
     url: "https://prtimes.jp/main/html/rd/p/000000109.000012092.html",
   },
   {
     id: 3,
     date: "2024-11-21",
-    title: "CoinDesk Japan, CNP 관련 기사", // TODO: 정확한 제목으로 수정
+    title: "NFT 트레이딩 카드, 3천억 엔 시장 공략? 진위 증명 ‘CNP 트레카’ 12월 출시",
     source: "CoinDesk Japan",
     url: "https://www.coindeskjapan.com/260507/",
   },

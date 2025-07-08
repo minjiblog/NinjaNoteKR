@@ -130,24 +130,24 @@ Web3와 NFT가 처음이신 분들도 부담 없이 자유롭게 둘러보세요
             {[
               {
                 id: 1,
+                date: "2025-07-01",
+                title: "CNP, 7월 2~4일 개최 라이선싱 재팬 참가",
+                source: "PR TIMES",
+                url: "https://prtimes.jp/main/html/rd/p/000000109.000012092.html",
+              },
+              {
+                id: 2,
+                date: "2025-06-25",
+                title: "‘숨지 않는! 크립토닌자 사쿠야’ 시즌3, 7월 7일 방송 시작",
+                source: "Yahoo!뉴스",
+                url: "https://news.yahoo.co.jp/articles/3dcf48c9bd321269d6a2facb271e8e814b9942df",
+              },
+              {
+                id: 3,
                 date: "2025-03-07",
                 title: "RED° DRONES, CNP 연계 드론쇼 개최",
                 source: "PR TIMES",
                 url: "https://prtimes.jp/main/html/rd/p/000000123.000072682.html",
-              },
-              {
-                id: 2,
-                date: "2025-02-27",
-                title: "CNP Toys 2차 예약 판매 개시",
-                source: "PR TIMES",
-                url: "https://prtimes.jp/main/html/rd/p/000000118.000072682.html",
-              },
-              {
-                id: 3,
-                date: "2025-02-20",
-                title: "CNP, 신규 파트너십 발표",
-                source: "CoinPost",
-                url: "https://coinpost.jp/",
               },
             ].map((news) => (
               <li key={news.id} className="bg-gray-50 dark:bg-gray-800 p-6 rounded-xl shadow hover:shadow-md transition">
