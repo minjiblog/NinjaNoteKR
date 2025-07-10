@@ -31,4 +31,10 @@ export const cryptoNinjaProjects: Project[] = [
     img: '/images/cnmobile.png',
     link: 'https://cryptoninja-mobile.com/',
   },
+  {
+    title: 'にんぷち (CryptoNinja Petit)',
+    desc: '‘닌푸치(CryptoNinja Petit)’는 CryptoNinja 및 Ninja DAO 세계관을 테마로 한 도트 픽셀 액션 게임입니다. 인디 게임 팀 CRYPTOFANTASY가 개발했으며, 2025년 현재 웹 브라우저와 Steam에서 무료로 플레이할 수 있습니다. 팬 커뮤니티 참여형으로 콜라보 이벤트와 교류가 활발한 타이틀입니다.',
+    img: '/images/petit.jpg',
+    link: 'https://www.cryptofantasy.net/ninjapetit/',
+  }
 ];
