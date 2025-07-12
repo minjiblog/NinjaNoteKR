@@ -10,9 +10,7 @@ export default function Footer() {
           </p>
         </div>
       </div>
-      <p className="text-xs text-gray-500 dark:text-gray-600 mt-4 text-center md:text-left">
-        CryptoNinja™ 및 모든 관련 IP는 Ninja DAO 및 Bucket Inc.의 자산입니다. 본 사이트는 공식 조직과 제휴되어 있지 않습니다.
-      </p>
+
     </footer>
   );
 }
