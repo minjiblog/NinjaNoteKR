@@ -33,6 +33,9 @@ const newsItems = [
   },
 ];
 
+// 최신 날짜 순 정렬
+const sortedNews = [...newsItems].sort((a, b) => b.date.localeCompare(a.date));
+
 export default function NewsPage() {
   return (
     <>
@@ -50,7 +53,7 @@ export default function NewsPage() {
       <div className="max-w-4xl mx-auto">
         <h1 className="text-3xl font-bold mb-8 text-gray-900 dark:text-white">Latest News</h1>
         <ul className="space-y-6">
-          {newsItems.map((news: any) => (
+          {sortedNews.map((news: any) => (
             <li
               key={news.id}
               className="border-b border-gray-200 dark:border-gray-700 pb-4 flex flex-col md:flex-row md:items-center md:justify-between"
